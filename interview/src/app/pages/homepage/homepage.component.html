@@ -1,1 +1,24 @@
-<p>homepage works!</p>
+<div class="homepage">
+    <div class="users-container">
+        <ng-container *ngFor="let user of users">
+            <div class="user-representation">
+                <section class="top-section">
+                    <div class="title-container">
+                        <span class="title">{{ user.fullName }}</span>
+                    </div>
+                    <div class="subtitle-container">
+                        <span class="subtitle">{{ user.email }}</span>
+                    </div>
+                </section>
+                <section class="bottom-section">
+                    <div class="content-container">
+                        <span class="content">{{ user.role }}</span>
+                    </div>
+                </section>
+                <section class="note-section">
+                    <span class="note">{{ user.createdAt.toDateString() }}</span>
+                </section>
+            </div>
+        </ng-container>
+    </div>
+</div>

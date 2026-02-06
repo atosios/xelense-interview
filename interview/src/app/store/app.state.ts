@@ -1,8 +1,3 @@
-export interface AppState {
-}
+export interface AppState { }
 
-/**
- * Initial Application State
- */
-export const initialAppState: AppState = {
-};
+export const initialAppState: AppState = {};
